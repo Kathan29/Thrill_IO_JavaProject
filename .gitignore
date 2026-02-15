@@ -1,0 +1,35 @@
+ # Compiled files
+*.class
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Eclipse files
+.project
+.classpath
+.settings/
+
+# IntelliJ files
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Build folders
+bin/
+target/
+out/
+
+# OS files
+.DS_Store
+Thumbs.db
+
