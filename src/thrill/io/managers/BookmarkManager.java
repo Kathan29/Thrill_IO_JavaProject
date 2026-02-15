@@ -1,12 +1,15 @@
 package thrill.io.managers;
 
+import thrill.io.dao.BookmarkDao;
 import thrill.io.entities.Book;
+import thrill.io.entities.Bookmark;
 import thrill.io.entities.Movie;
 import thrill.io.entities.Weblink;
 
 public class BookmarkManager {
 
-	public static BookmarkManager instance = new BookmarkManager();
+	private static BookmarkManager instance = new BookmarkManager();
+	private static BookmarkDao dao = new BookmarkDao();
 
 	private BookmarkManager() {
 
@@ -59,5 +62,9 @@ public class BookmarkManager {
 		weblink.setHost(host);
 		
 		return weblink;
+	}
+	
+	public Bookmark[][] getBookmark(){
+		return dao.getBookmark();
 	}
 }

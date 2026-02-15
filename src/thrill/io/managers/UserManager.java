@@ -1,9 +1,11 @@
 package thrill.io.managers;
 
+import thrill.io.dao.UserDao;
 import thrill.io.entities.User;
 
 public class UserManager {
-	public static UserManager instance = new UserManager();
+	private static UserManager instance = new UserManager();
+	private static UserDao dao = new UserDao();
 
 	private UserManager() {
 	};
@@ -25,5 +27,9 @@ public class UserManager {
 		user.setGender(gender);
 
 		return user;
+	}
+	
+	public User[] getUser() {
+		return dao.getUser();
 	}
 }
