@@ -1,4 +1,4 @@
-package thrill.io.entities;
+package thrillio.entities;
 
 import java.util.Arrays;
 

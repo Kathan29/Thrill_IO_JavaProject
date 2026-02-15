@@ -1,7 +1,7 @@
-package thrill.io.dao;
+package thrillio.dao;
 
-import thrill.io.DataStore;
-import thrill.io.entities.User;
+import thrillio.DataStore;
+import thrillio.entities.User;
 
 public class UserDao {
 	public User[] getUser() {

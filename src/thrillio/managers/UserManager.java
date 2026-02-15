@@ -1,7 +1,7 @@
-package thrill.io.managers;
+package thrillio.managers;
 
-import thrill.io.dao.UserDao;
-import thrill.io.entities.User;
+import thrillio.dao.UserDao;
+import thrillio.entities.User;
 
 public class UserManager {
 	private static UserManager instance = new UserManager();

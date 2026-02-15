@@ -1,4 +1,4 @@
-package thrill.io.constants;
+package thrillio.constants;
 
 public class MovieGenre {
 	private MovieGenre() {

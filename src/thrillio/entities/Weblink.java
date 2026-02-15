@@ -1,4 +1,4 @@
-package thrill.io.entities;
+package thrillio.entities;
 
 public class Weblink extends Bookmark {
 	private String url;

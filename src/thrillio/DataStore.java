@@ -1,14 +1,14 @@
-package thrill.io;
+package thrillio;
 
-import thrill.io.constants.BookGenre;
-import thrill.io.constants.Gender;
-import thrill.io.constants.MovieGenre;
-import thrill.io.constants.UserType;
-import thrill.io.entities.Bookmark;
-import thrill.io.entities.User;
-import thrill.io.entities.UserBookmark;
-import thrill.io.managers.BookmarkManager;
-import thrill.io.managers.UserManager;
+import thrillio.constants.BookGenre;
+import thrillio.constants.Gender;
+import thrillio.constants.MovieGenre;
+import thrillio.constants.UserType;
+import thrillio.entities.Bookmark;
+import thrillio.entities.User;
+import thrillio.entities.UserBookmark;
+import thrillio.managers.BookmarkManager;
+import thrillio.managers.UserManager;
 
 public class DataStore {
 

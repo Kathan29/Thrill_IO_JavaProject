@@ -1,7 +1,7 @@
-package thrill.io.dao;
+package thrillio.dao;
 
-import thrill.io.DataStore;
-import thrill.io.entities.Bookmark;
+import thrillio.DataStore;
+import thrillio.entities.Bookmark;
 
 public class BookmarkDao {
 	public Bookmark[][] getBookmark(){

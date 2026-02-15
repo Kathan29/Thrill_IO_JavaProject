@@ -1,10 +1,10 @@
-package thrill.io.managers;
+package thrillio.managers;
 
-import thrill.io.dao.BookmarkDao;
-import thrill.io.entities.Book;
-import thrill.io.entities.Bookmark;
-import thrill.io.entities.Movie;
-import thrill.io.entities.Weblink;
+import thrillio.dao.BookmarkDao;
+import thrillio.entities.Book;
+import thrillio.entities.Bookmark;
+import thrillio.entities.Movie;
+import thrillio.entities.Weblink;
 
 public class BookmarkManager {
 
