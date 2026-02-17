@@ -2,6 +2,8 @@ package thrillio.entities;
 
 import java.util.Arrays;
 
+import thrillio.constants.MovieGenre;
+
 public class Movie extends Bookmark {
 	private int releaseYear;
 	private String[] cast, directors;
@@ -52,6 +54,13 @@ public class Movie extends Bookmark {
 	public String toString() {
 		return "Movie [releaseYear=" + releaseYear + ", cast=" + Arrays.toString(cast) + ", directors="
 				+ Arrays.toString(directors) + ", genre=" + genre + ", imdbRating=" + imdbRating + "]";
+	}
+
+	@Override
+	public boolean isKidFriendly() {
+		if(genre.contains(MovieGenre.THRILLERS) || genre.contains(MovieGenre.HORROR))
+			return false;
+		return true;
 	}
 
 }

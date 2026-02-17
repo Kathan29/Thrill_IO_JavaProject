@@ -2,6 +2,8 @@ package thrillio.entities;
 
 import java.util.Arrays;
 
+import thrillio.constants.BookGenre;
+
 public class Book extends Bookmark {
 	private int publicationYear;
 	private String publisher, genre;
@@ -52,6 +54,15 @@ public class Book extends Bookmark {
 	public String toString() {
 		return "Book [publicationYear=" + publicationYear + ", publisher=" + publisher + ", genre=" + genre
 				+ ", authors=" + Arrays.toString(authors) + ", amazonRating=" + amazonRating + "]";
+	}
+
+	@Override
+	public boolean isKidFriendly() {
+		
+		if(genre.contains(BookGenre.SELF_HELP) || genre.contains(BookGenre.PHILOSOPHY))
+			return false;
+		
+		return true;
 	}
 
 }
