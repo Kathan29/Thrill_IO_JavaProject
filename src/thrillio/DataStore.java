@@ -20,7 +20,8 @@ public class DataStore {
 	private static User[] user = new User[TOTAL_USER_COUNT];
 	private static Bookmark[][] bookmark = new Bookmark[TOTAL_BOOKMARK_TYPE][EACH_BOOKMARK_TYPE_COUNT];
 	private static UserBookmark[] userbookmarks = new UserBookmark[TOTAL_USER_COUNT * BOOKMARK_LIMIT];
-
+	private static int userBookmarkIndex = 0;
+	
 	public static User[] getUser() {
 		return user;
 	}
@@ -97,6 +98,12 @@ public class DataStore {
 		user[4] = UserManager.getInstance().createUser(1004, "user4@semanticsquare.com", "test", "Dheeru", "M",
 				UserType.CHIEF_EDITOR, Gender.MALE);
 
+	}
+
+	public static void storeBookmarking(UserBookmark userBookmark) {
+		
+		userbookmarks[userBookmarkIndex] = userBookmark;
+		userBookmarkIndex++;
 	}
 
 }
