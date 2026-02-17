@@ -59,7 +59,7 @@ public class Book extends Bookmark {
 	@Override
 	public boolean isKidFriendly() {
 		
-		if(genre.contains(BookGenre.SELF_HELP) || genre.contains(BookGenre.PHILOSOPHY))
+		if(genre.equals(BookGenre.SELF_HELP) || genre.equals(BookGenre.PHILOSOPHY))
 			return false;
 		
 		return true;

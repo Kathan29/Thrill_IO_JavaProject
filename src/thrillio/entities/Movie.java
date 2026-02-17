@@ -58,7 +58,7 @@ public class Movie extends Bookmark {
 
 	@Override
 	public boolean isKidFriendly() {
-		if(genre.contains(MovieGenre.THRILLERS) || genre.contains(MovieGenre.HORROR))
+		if(genre.equals(MovieGenre.THRILLERS) || genre.equals(MovieGenre.HORROR))
 			return false;
 		return true;
 	}
