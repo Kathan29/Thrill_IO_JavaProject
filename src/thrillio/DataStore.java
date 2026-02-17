@@ -12,10 +12,10 @@ import thrillio.managers.UserManager;
 
 public class DataStore {
 
-	private static final int TOTAL_USER_COUNT = 5;
-	private static final int TOTAL_BOOKMARK_TYPE = 3;
-	private static final int EACH_BOOKMARK_TYPE_COUNT = 5;
-	private static final int BOOKMARK_LIMIT = 5;
+	public static final int TOTAL_USER_COUNT = 5;
+	public static final int TOTAL_BOOKMARK_TYPE = 3;
+	public static final int EACH_BOOKMARK_TYPE_COUNT = 5;
+	public static final int BOOKMARK_LIMIT = 5;
 
 	private static User[] user = new User[TOTAL_USER_COUNT];
 	private static Bookmark[][] bookmark = new Bookmark[TOTAL_BOOKMARK_TYPE][EACH_BOOKMARK_TYPE_COUNT];
