@@ -3,8 +3,9 @@ package thrillio.entities;
 import java.util.Arrays;
 
 import thrillio.constants.BookGenre;
+import thrillio.partners.Sharable;
 
-public class Book extends Bookmark {
+public class Book extends Bookmark implements Sharable{
 	private int publicationYear;
 	private String publisher, genre;
 	private String[] authors;
@@ -63,6 +64,22 @@ public class Book extends Bookmark {
 			return false;
 		
 		return true;
+	}
+
+	@Override
+	public String getItemData() {
+		StringBuilder xmlData = new StringBuilder();
+		
+		xmlData.append("<item>");
+			xmlData.append("<type>Book</type>");
+			xmlData.append("<title>"+getTitle()+"</title>");
+			xmlData.append("<publicationYear>"+publicationYear+"</publicationYear>");
+			xmlData.append("<publisher>"+publisher+"</publisher>");
+			xmlData.append("<authors>"+String.join(",", authors)+"</authors>");
+			xmlData.append("<amazonRating>"+amazonRating+"</amazonRating>");
+		xmlData.append("</item>");
+		
+		return xmlData.toString();
 	}
 
 }
